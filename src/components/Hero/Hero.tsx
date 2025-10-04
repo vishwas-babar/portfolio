@@ -1,6 +1,7 @@
 'use client';
 import Image from 'next/image';
 import { HeroImage } from '@/utils/images';
+import { GithubIcon, LinkedIn, X } from '@/utils/icons';
 import Ellipse from './Ellipse';
 import RoleSwitcher from './RoleSwitcher';
 
@@ -26,24 +27,65 @@ const Hero = () => {
           </h1>
 
           <h2 className="text-neutral mt-3">
-            Crafting innovative solutions to solve real-world problems
+            A full-stack developer passionate about building scalable,
+            performant, and user-friendly applications with modern web
+            technologies.
           </h2>
 
-          <div className="mt-6 flex flex-wrap gap-6">
-            <a
-              href="#"
-              aria-label="Connect with me"
-              className="bg-accent min-w-32 cursor-pointer rounded-lg px-[14px] py-[10px] text-center text-sm font-medium text-[#00071E]"
-            >
-              Hire Me
-            </a>
-            <a
-              href="https://www.linkedin.com/in/vishwas-babar-6a2005229/"
-              aria-label="View LinkedIn Profile"
-              className="text-neutral bg-secondary cursor-pointer rounded-lg px-[14px] py-[10px] text-sm"
-            >
-              LinkedIn Profile
-            </a>
+          <div className="mt-6 space-y-6">
+            {/* Social Media Icons */}
+            <div className="flex flex-wrap gap-6">
+              <a
+                href="https://github.com/vishwas-babar"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit GitHub Profile"
+                className="group flex items-center justify-center w-12 h-12 bg-secondary hover:bg-accent rounded-full transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-accent/20"
+              >
+                <GithubIcon className="w-6 h-6 text-neutral group-hover:text-primary transition-colors duration-300" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/vishwas-babar-6a2005229/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit LinkedIn Profile"
+                className="group flex items-center justify-center w-12 h-12 bg-secondary hover:bg-accent rounded-full transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-accent/20"
+              >
+                <LinkedIn className="w-6 h-6 text-neutral group-hover:text-primary transition-colors duration-300" />
+              </a>
+              <a
+                href="https://x.com/Vishwas_babar_"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit X (Twitter) Profile"
+                className="group flex items-center justify-center w-12 h-12 bg-secondary hover:bg-accent rounded-full transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-accent/20"
+              >
+                <X className="w-6 h-6 text-neutral group-hover:text-primary transition-colors duration-300" />
+              </a>
+            </div>
+
+            {/* CTA Button */}
+            <div>
+              <a
+                href="#contact"
+                className="inline-flex items-center gap-2 bg-accent hover:bg-accent/90 text-primary px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-accent/20"
+              >
+                <span>Let's Work Together</span>
+                <svg
+                  className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  />
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
 

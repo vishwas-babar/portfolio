@@ -30,6 +30,7 @@ import taskManager from '@/assets/images/task-manager.png';
 import trueFeedback from '@/assets/images/truefeedback.png';
 import heroPlaceholder from '@/assets/images/hero-placeholder.png';
 import decentUptime from '@/assets/images/decent-uptime.png';
+import portfolio from '@/assets/images/portfolio.png';
 
 export const projects = [
   {
@@ -51,6 +52,21 @@ export const projects = [
   },
   {
     priority: 2,
+    title: 'Personal Portfolio',
+    shortDescription:
+      'A modern, responsive portfolio website built with Next.js, TypeScript, and Tailwind CSS. Features smooth animations with Framer Motion, theme switching, interactive components, and a clean design showcasing projects, experience, and skills with optimal performance.',
+    cover: portfolio,
+    livePreview: 'https://portfolio-pearl-sigma-74.vercel.app/',
+    githubLink: 'https://github.com/vishwas-babar/portfolio',
+    usedSkills: [
+      SkillName.NextJS,
+      SkillName.TypeScript,
+      SkillName.TailwindCSS,
+      SkillName.React,
+    ],
+  },
+  {
+    priority: 3,
     title: 'Decentralized Uptime Monitoring System',
     shortDescription:
       'A decentralized uptime monitoring platform to track website and API availability without a single point of failure. Features distributed monitoring nodes, tamper-proof logs, real-time alerting via email/webhooks, and a comprehensive dashboard for uptime visualization.',
@@ -68,7 +84,7 @@ export const projects = [
     ],
   },
   {
-    priority: 3,
+    priority: 4,
     title: 'True Feedback',
     shortDescription:
       'A full-stack anonymous feedback platform built with Next.js, Tailwind, Shadcn, Prisma, PostgreSQL, and NextAuth.js. Features include secure auth, email notifications via Resend, responsive UI with Framer Motion animations, and robust validation with Zod.',
@@ -84,7 +100,7 @@ export const projects = [
     ],
   },
   {
-    priority: 4,
+    priority: 5,
     title: 'Medium Clone',
     shortDescription:
       'A lightweight Medium-style blogging platform built with React, TypeScript, Tailwind, Prisma, and PostgreSQL. Backend powered by Hono + Cloudflare Workers for serverless scalability.',
@@ -102,7 +118,7 @@ export const projects = [
     ],
   },
   {
-    priority: 5,
+    priority: 6,
     title: 'Animated Landing Page',
     shortDescription:
       'A modern animated landing page with 4–5 hero sections, built with React and Tailwind CSS. Smooth scroll and micro-interactions for delightful UX.',
@@ -112,7 +128,7 @@ export const projects = [
     usedSkills: [SkillName.React, SkillName.TailwindCSS, SkillName.TypeScript],
   },
   {
-    priority: 6,
+    priority: 7,
     title: 'Todo App',
     shortDescription:
       'A task manager built with React, Context API, and Tailwind CSS. Features CRUD operations, task filtering, and persistent storage using Local Storage.',
@@ -241,6 +257,7 @@ export const experiences: Experience[] = [
     duration: 'July 2025 – Present',
     location: 'Remote',
     type: 'Internship',
+    ldPage: 'https://www.linkedin.com/company/betatest-solutions-pvt-ltd',
     responsibilities: [
       'Debugged and enhanced React.js / Next.js / Express.js features, improving UI performance and user flows.',
       'Integrated and tested REST APIs, ensuring seamless frontend–backend communication.',
@@ -260,6 +277,7 @@ export const experiences: Experience[] = [
     duration: 'March 2025 – July 2025',
     location: 'Remote',
     type: 'Internship',
+    ldPage: 'https://www.linkedin.com/company/syncupindia',
     responsibilities: [
       'Built a LinkedIn-style professional networking platform from scratch using a microservices architecture.',
       'Independently developed and integrated core services: Authentication, Resume, Chat, Post, Connection, and Job services.',

@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { Rocket, Briefcase, Users } from 'lucide-react';
+import { LinkedIn } from '@/utils/icons';
 import { Experience } from '@/lib/types';
 import TechBadge from './TechBadge';
 
@@ -158,9 +159,22 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
             {experience.role}
           </h3>
 
-          <h4 className="text-lg font-semibold text-primary mb-4">
-            {experience.company}
-          </h4>
+          <div className="flex items-center gap-2 mb-4">
+            <h4 className="text-lg font-semibold text-accent">
+              {experience.company}
+            </h4>
+            {experience.ldPage && (
+              <a
+                href={experience.ldPage}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`Visit ${experience.company} LinkedIn page`}
+                className="group flex items-center justify-center w-8 h-8 bg-accent/10 hover:bg-accent rounded-full transition-all duration-300 hover:scale-110"
+              >
+                <LinkedIn className="w-4 h-4 text-accent group-hover:text-primary transition-colors duration-300" />
+              </a>
+            )}
+          </div>
         </div>
 
         <div className="mb-4">

@@ -39,6 +39,7 @@ export interface Experience {
   type: 'Internship' | 'Client Project' | 'Freelance' | 'Full-time';
   responsibilities: string[];
   techStack: SkillName[];
+  ldPage?: string; // LinkedIn page of the company
 }
 
 export interface Project {

@@ -33,7 +33,7 @@ const ExperienceTimeline: React.FC<ExperienceTimelineProps> = ({
   );
 
   return (
-    <section ref={containerRef} className="py-16 relative">
+    <section id="experience" ref={containerRef} className="py-16 relative">
       <div className="max-w-6xl mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

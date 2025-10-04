@@ -8,13 +8,34 @@ import { ExperienceTimeline } from '@/components/Experience';
 export default async function Home() {
   return (
     <main>
-      <Hero />
-      <Skills skills={skillList} />
-      <div className="mx-auto my-8 max-w-[1200px] px-4 md:my-[3.75rem]">
-        <ProjectSection />
-        <ExperienceTimeline experiences={experiences} />
-        <ContactSection />
-      </div>
+      {/* Hero + Skills Section */}
+      <section className="min-h-screen flex flex-col">
+        <Hero />
+        {/* <div className="flex-1 flex items-center"> */}
+          <Skills skills={skillList} />
+        {/* </div> */}
+      </section>
+
+      {/* Experience Section */}
+      <section className="min-h-screen flex items-center">
+        <div className="mx-auto w-full max-w-[1200px] px-4">
+          <ExperienceTimeline experiences={experiences} />
+        </div>
+      </section>
+
+      {/* Projects Section */}
+      <section className="min-h-screen mt-20 flex items-center">
+        <div className="mx-auto w-full max-w-[1200px] px-4">
+          <ProjectSection />
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section className="min-h-screen flex items-center">
+        <div className="mx-auto w-full max-w-[1200px] px-4">
+          <ContactSection />
+        </div>
+      </section>
     </main>
   );
 }

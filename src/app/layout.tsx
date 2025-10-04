@@ -13,30 +13,27 @@ const firaCode = Fira_Code({
 const title = 'Vishwas Vb - Full-Stack Developer | React, NextJS, NodeJS';
 
 const description =
-  "Skilled full-stack web developer in Chicago. I build responsive, user-friendly websites with React, NextJS, and NodeJS. Let's bring your vision to life. Hire me today!";
-
-const url = process.env.NEXT_PUBLIC_SITE_URL;
+  "Skilled full-stack web developer in India. I build responsive, user-friendly websites with React, NextJS, and NodeJS. Let's bring your vision to life. Hire me today!";
 
 export const metadata: Metadata = {
   title,
   description,
+  icons: {
+    icon: '/images/hero-my.png',
+    shortcut: '/images/hero-my.png',
+    apple: '/images/hero-my.png',
+  },
   category: 'technology',
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL!),
-  alternates: {
-    canonical: url,
-  },
   openGraph: {
     title,
     description,
-    url,
-    siteName: 'John Doe Portfolio',
+    siteName: 'Vishwas Babar Portfolio',
     type: 'website',
   },
   twitter: {
     title,
     description,
-    card: 'summary_large_image',
-    creator: '@Basit_Miyanji',
   },
 };
 

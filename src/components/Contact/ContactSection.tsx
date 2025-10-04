@@ -1,4 +1,4 @@
-'use client'
+'use client';
 import { MsgIcon, PhoneIcon } from '@/utils/icons';
 import SectionHeading from '../SectionHeading/SectionHeading';
 import ContactForm from './ContactForm';
@@ -29,12 +29,13 @@ const ContactSection = () => {
       >
         <div className="flex flex-col justify-between gap-8">
           <div>
-            <h3 className="text-neutral text-3xl font-bold">Let's Talk</h3>
+            <h3 className="text-neutral text-3xl font-bold">Let's Connect</h3>
             <h4 className="text-accent text-2xl font-bold md:text-3xl">
-              We'd love to help
+              Ready to collaborate
             </h4>
             <p className="text-neutral mt-8">
-              Crafting innovative solutions to solve real-world problems
+              Let's discuss your next project or explore opportunities to work
+              together
             </p>
           </div>
 

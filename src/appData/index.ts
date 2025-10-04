@@ -39,7 +39,7 @@ export const projects = [
     shortDescription:
       'A social platform for campus students built with React, Tailwind, Redux, Node, Express, and MongoDB. Integrated Google OAuth 2.0 for login/signup, React Query for optimized data fetching, and Cloudinary for media uploads. Achieved 50% faster data retrieval and 20% lighter server load.',
     cover: Pillaibuzz,
-    livePreview: 'https://pillai-buzz.vercel.app',
+    livePreview: 'https://pillai-buzz-2-o.vercel.app',
     githubLink: 'https://github.com/vishwas-babar/pillai-buzz',
     usedSkills: [
       SkillName.React,
@@ -56,7 +56,7 @@ export const projects = [
     shortDescription:
       'A modern, responsive portfolio website built with Next.js, TypeScript, and Tailwind CSS. Features smooth animations with Framer Motion, theme switching, interactive components, and a clean design showcasing projects, experience, and skills with optimal performance.',
     cover: portfolio,
-    livePreview: 'https://portfolio-pearl-sigma-74.vercel.app/',
+    livePreview: 'https://vishwasvb.vercel.app',
     githubLink: 'https://github.com/vishwas-babar/portfolio',
     usedSkills: [
       SkillName.NextJS,
@@ -71,7 +71,7 @@ export const projects = [
     shortDescription:
       'A decentralized uptime monitoring platform to track website and API availability without a single point of failure. Features distributed monitoring nodes, tamper-proof logs, real-time alerting via email/webhooks, and a comprehensive dashboard for uptime visualization.',
     cover: decentUptime,
-    githubLink: 'https://github.com/vishwas-babar/uptime-monitor',
+    githubLink: 'https://github.com/vishwas-babar/decentralized-uptime',
     usedSkills: [
       SkillName.TypeScript,
       SkillName.NextJS,
@@ -106,7 +106,7 @@ export const projects = [
       'A lightweight Medium-style blogging platform built with React, TypeScript, Tailwind, Prisma, and PostgreSQL. Backend powered by Hono + Cloudflare Workers for serverless scalability.',
     cover: Medium,
     livePreview: 'https://medium-one-puce.vercel.app/',
-    githubLink: 'https://github.com/vishwas-babar/medium-clone',
+    githubLink: 'https://github.com/vishwas-babar/medium',
     usedSkills: [
       SkillName.React,
       SkillName.TypeScript,

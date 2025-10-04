@@ -1,22 +1,10 @@
 'use client';
-import useRoleSwitcher from '@/hooks/useRoleSwitcher';
-import useRotatingAnimation from '@/hooks/useRotatingAnimation';
 import Image from 'next/image';
 import { HeroImage } from '@/utils/images';
 import Ellipse from './Ellipse';
+import RoleSwitcher from './RoleSwitcher';
 
 const Hero = () => {
-  const ellipseRef = useRotatingAnimation();
-  const role = useRoleSwitcher({
-    roles: [
-      'FULLSTACK DEVELOPER',
-      'FRONTEND DEVELOPER',
-      'BACKEND DEVELOPER',
-      'REACT DEVELOPER',
-      'NEXTJS DEVELOPER',
-    ],
-  });
-
   return (
     <section className="bg-primary bg-small-glow bg-small-glow-position md:bg-large-glow-position lg:bg-large-glow min-h-[calc(dvh-4rem)] bg-no-repeat">
       <div className="mx-auto grid max-w-[1200px] grid-cols-1 items-center gap-4 px-4 pt-12 pb-10 md:grid-cols-2 lg:p-4">
@@ -25,9 +13,16 @@ const Hero = () => {
             <span className="text-neutral mb-2 block text-3xl font-bold">
               Hi - I'm Vishwas Vb
             </span>
-            <span className="text-accent block text-[1.75rem] font-bold">
-              {role}
-            </span>
+            <RoleSwitcher
+              roles={[
+                'FULLSTACK DEVELOPER',
+                'FRONTEND DEVELOPER',
+                'BACKEND DEVELOPER',
+                'REACT DEVELOPER',
+                'NEXTJS DEVELOPER',
+              ]}
+              className="text-accent text-[1.75rem] font-bold min-h-[2.5rem]"
+            />
           </h1>
 
           <h2 className="text-neutral mt-3">
@@ -53,19 +48,16 @@ const Hero = () => {
         </div>
 
         <div className="flex min-h-[18.75rem] items-center justify-center lg:min-h-[35rem]">
-          <div className="text-accent relative size-56 sm:size-60 md:size-[20rem] lg:size-[25.75rem]">
+          <div className="text-accent rounded-full overflow-hidden relative  size-56 sm:size-60 md:size-[20rem] lg:size-[25.75rem]">
             <Image
               src={HeroImage}
               fill={true}
               priority={true}
               sizes="(min-width: 1024px) 25.75rem, (min-width: 768px) 20rem, (min-width: 640px) 15rem, 14rem"
               alt="John Doe - Full Stack Developer"
-              className="object-contain p-7"
+              className="object-contain p-7 mt-2 scale-110"
             />
-            <Ellipse
-              ref={ellipseRef}
-              className="absolute top-0 left-0 size-56 transition-transform duration-500 ease-out sm:size-60 md:size-[20rem] lg:size-[25.75rem]"
-            />
+            <Ellipse className="absolute top-0 left-0 size-56 transition-transform duration-500 ease-out sm:size-60 md:size-[20rem] lg:size-[25.75rem]" />
           </div>
         </div>
       </div>

@@ -24,6 +24,7 @@ import PostgreSQLIcon from '../assets/icons/postgresql.png';
 import RedisIcon from '../assets/icons/redis.png';
 import PostmanIcon from '../assets/icons/postman.png';
 import CloudFlareIcon from '../assets/icons/cloudflare.png';
+import TurboRepo from '../assets/icons/turborepo.svg';
 
 const PreviewIcon: FC<SVGProps<SVGSVGElement>> = props => {
   return (
@@ -365,6 +366,7 @@ export {
   TailwindCSS,
   Timer,
   TypescriptIcon,
+  TurboRepo,
   X,
   AWSIcon,
   //   CICDIcon,

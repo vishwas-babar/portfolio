@@ -22,11 +22,23 @@ export enum SkillName {
   Postman = 'Postman',
   Hono = 'Hono',
   CloudflareWorkers = 'Cloudflare Workers',
+  ReactNative = 'React Native',
+  TurboRepo = 'TurboRepo',
 }
 
 export interface Skill {
   name: SkillName;
   icon: React.FC<React.SVGProps<SVGSVGElement>> | any; // Can be SVG component or static image
+}
+
+export interface Experience {
+  role: string;
+  company: string;
+  duration: string;
+  location: string;
+  type: 'Internship' | 'Client Project' | 'Freelance' | 'Full-time';
+  responsibilities: string[];
+  techStack: SkillName[];
 }
 
 export interface Project {

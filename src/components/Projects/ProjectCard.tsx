@@ -17,48 +17,44 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ data }) => {
     usedSkills,
   } = data;
 
-  // Function to get skill icon by skill name
   const getSkillIcon = (skillName: SkillName) => {
     const skill = skillList.find(skill => skill.name === skillName);
     return skill?.icon;
   };
 
   return (
-    <div className="bg-secondary border-border flex flex-col rounded-[14px] border overflow-hidden">
-      {/* Cover Image - Full Width */}
-      <figure
-        className="w-full"
-        style={{
-          aspectRatio: '16/8',
-          width: 'auto',
-          height: '310px',
-        }}
-      >
-        <Image
-          src={cover}
-          width={400}
-          height={225}
-          alt="Project Cover"
-          className="h-full w-full p-3 rounded-2xl overflow-hidden object-cover rounded-t-[14px]"
-          // style={{ aspectRatio: '16/7' }}
-        />
+    <div className="bg-secondary border-border flex flex-col rounded-[14px] border transition-all duration-300 hover:border-accent/30 hover:shadow-xl hover:shadow-accent/10 group h-full">
+      {/* cover image */}
+      <figure className="w-full p-4 flex-shrink-0">
+        <div
+          className="w-full overflow-hidden rounded-lg"
+          style={{ aspectRatio: '16/8.6' }}
+        >
+          <Image
+            src={cover}
+            width={400}
+            height={300}
+            alt="Project Cover"
+            className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+          />
+        </div>
       </figure>
 
-      {/* Content Section */}
-      <div className="p-5">
+      {/* content section */}
+      <div className="p-5 flex flex-col flex-grow">
         {/* Title */}
         <h3 className="text-secondary-content text-lg font-medium md:font-semibold mb-3">
           {title}
         </h3>
 
-        {/* Short Description */}
-        <div className="bg-primary text-primary-content mb-4 p-4 rounded-lg">
-          <p className="text-[14px] font-normal md:text-base">
+        {/* description */}
+        <div className="bg-primary text-primary-content mb-4 p-4 rounded-lg flex-grow">
+          <p className="text-[14px] font-normal md:text-base leading-relaxed">
             {shortDescription}
           </p>
         </div>
 
-        {/* Skills Used */}
+        {/* used skills */}
         <div className="mb-4">
           <h4 className="text-secondary-content text-sm font-medium mb-2">
             Technologies:
@@ -75,7 +71,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ data }) => {
                   title={skillName}
                 >
                   <Image
-                    src={IconComponent}
+                    src={
+                      typeof IconComponent === 'string'
+                        ? IconComponent
+                        : IconComponent.src ||
+                          IconComponent.default ||
+                          IconComponent
+                    }
                     alt={skillName}
                     width={20}
                     height={20}
@@ -87,27 +89,26 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ data }) => {
           </div>
         </div>
 
-        {/* Links */}
-        <div className="flex gap-5">
+        <div className="flex gap-5 mt-auto pt-2">
           {livePreview && (
             <a
               href={livePreview}
-              className="text-accent flex gap-2 text-sm underline underline-offset-[3px] transition-all duration-75 ease-linear hover:scale-105 md:text-base"
+              className="text-accent flex gap-2 text-sm underline underline-offset-[3px] transition-all duration-300 ease-out hover:scale-105 hover:text-accent/80 hover:shadow-md hover:shadow-accent/20 md:text-base group/link"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <PreviewIcon className="h-auto w-[18px] md:w-5" />
+              <PreviewIcon className="h-auto w-[18px] md:w-5 transition-transform duration-300 group-hover/link:rotate-12" />
               <span>Live Preview</span>
             </a>
           )}
           {githubLink && (
             <a
               href={githubLink}
-              className="text-accent flex gap-2 text-sm underline underline-offset-[3px] transition-all duration-75 ease-linear hover:scale-105 md:text-base"
+              className="text-accent flex gap-2 text-sm underline underline-offset-[3px] transition-all duration-300 ease-out hover:scale-105 hover:text-accent/80 hover:shadow-md hover:shadow-accent/20 md:text-base group/link"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <GithubIcon className="w-[18px] md:w-5" />
+              <GithubIcon className="w-[18px] md:w-5 transition-transform duration-300 group-hover/link:rotate-12" />
               <span>Github Link</span>
             </a>
           )}

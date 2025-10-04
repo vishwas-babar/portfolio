@@ -26,14 +26,21 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ data }) => {
   return (
     <div className="bg-secondary border-border flex flex-col rounded-[14px] border overflow-hidden">
       {/* Cover Image - Full Width */}
-      <figure className="w-full" style={{ aspectRatio: '16/6' }}>
+      <figure
+        className="w-full"
+        style={{
+          aspectRatio: '16/8',
+          width: 'auto',
+          height: '310px',
+        }}
+      >
         <Image
           src={cover}
           width={400}
           height={225}
           alt="Project Cover"
           className="h-full w-full p-3 rounded-2xl overflow-hidden object-cover rounded-t-[14px]"
-          style={{ aspectRatio: '16/7' }}
+          // style={{ aspectRatio: '16/7' }}
         />
       </figure>
 

@@ -16,12 +16,16 @@ import {
   RecoilIcon,
   RedisIcon,
   ReduxIcon,
+  CloudFlareIcon,
   SocketIcon,
   TailwindCSS,
   TypescriptIcon,
-  //   WebSocketsIcon,
 } from '@/utils/icons';
 import { SkillName, Skill } from '@/lib/types';
+import Pillaibuzz from '@/assets/images/pillaibuzz.png';
+import Medium from '@/assets/images/medium.png';
+import animatedLandingPage from '@/assets/images/animated-landingpage.png';
+import taskManager from '@/assets/images/task-manager.png';
 
 export const projects = [
   {
@@ -29,10 +33,9 @@ export const projects = [
     title: 'Pillai Buzz',
     shortDescription:
       'A social platform for campus students built with React, Tailwind, Redux, Node, Express, and MongoDB. Integrated Google OAuth 2.0 for login/signup, React Query for optimized data fetching, and Cloudinary for media uploads. Achieved 50% faster data retrieval and 20% lighter server load.',
-    cover:
-      'https://images.unsplash.com/photo-1607746882042-944635dfe10e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3',
+    cover: Pillaibuzz,
     livePreview: 'https://pillai-buzz.vercel.app',
-    githubLink: '',
+    githubLink: 'https://github.com/vishwas-babar/pillai-buzz',
     usedSkills: [
       SkillName.React,
       SkillName.TailwindCSS,
@@ -64,14 +67,15 @@ export const projects = [
     title: 'Medium Clone',
     shortDescription:
       'A lightweight Medium-style blogging platform built with React, TypeScript, Tailwind, Prisma, and PostgreSQL. Backend powered by Hono + Cloudflare Workers for serverless scalability.',
-    cover:
-      'https://images.unsplash.com/photo-1492724441997-5dc865305da7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3',
-    livePreview: 'https://medium-clone.vercel.app',
+    cover: Medium,
+    livePreview: 'https://medium-one-puce.vercel.app/',
     githubLink: 'https://github.com/vishwas-babar/medium-clone',
     usedSkills: [
       SkillName.React,
       SkillName.TypeScript,
       SkillName.TailwindCSS,
+      SkillName.Hono,
+      SkillName.CloudflareWorkers,
       SkillName.Prisma,
       SkillName.PostgreSQL,
     ],
@@ -81,11 +85,10 @@ export const projects = [
     title: 'Animated Landing Page',
     shortDescription:
       'A modern animated landing page with 4–5 hero sections, built with React and Tailwind CSS. Smooth scroll and micro-interactions for delightful UX.',
-    cover:
-      'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3',
-    livePreview: 'https://animated-landing.vercel.app',
+    cover: animatedLandingPage,
+    livePreview: 'https://animated-landing-page-two.vercel.app/',
     githubLink: 'https://github.com/vishwas-babar/animated-landing-page',
-    usedSkills: [SkillName.React, SkillName.TailwindCSS, SkillName.JavaScript],
+    usedSkills: [SkillName.React, SkillName.TailwindCSS, SkillName.TypeScript],
   },
   {
     priority: 5,
@@ -94,7 +97,6 @@ export const projects = [
       'A React-based currency converter supporting 160+ currencies. Integrated Exchange Rate API for real-time conversions with Tailwind CSS for clean UI.',
     cover:
       'https://images.unsplash.com/photo-1623886026216-15cefb0b23b0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3',
-    livePreview: 'https://currency-converter.vercel.app',
     githubLink: 'https://github.com/vishwas-babar/currency-converter',
     usedSkills: [SkillName.React, SkillName.JavaScript, SkillName.TailwindCSS],
   },
@@ -103,11 +105,15 @@ export const projects = [
     title: 'Todo App',
     shortDescription:
       'A task manager built with React, Context API, and Tailwind CSS. Features CRUD operations, task filtering, and persistent storage using Local Storage.',
-    cover:
-      'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3',
+    cover: taskManager,
     livePreview: 'https://task-manager-eight-rouge.vercel.app/',
     githubLink: 'https://github.com/vishwas-babar/task-manager',
-    usedSkills: [SkillName.React, SkillName.JavaScript, SkillName.TailwindCSS],
+    usedSkills: [
+      SkillName.NextJS,
+      SkillName.JavaScript,
+      SkillName.TailwindCSS,
+      SkillName.Recoil,
+    ],
   },
 ];
 
@@ -136,6 +142,10 @@ export const skillList: Skill[] = [
   {
     name: SkillName.ExpressJS,
     icon: ExpressjsIcon,
+  },
+  {
+    name: SkillName.Hono,
+    icon: CloudFlareIcon,
   },
   {
     name: SkillName.NestJS,

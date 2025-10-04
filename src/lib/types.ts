@@ -1,3 +1,5 @@
+import { StaticImageData } from 'next/image';
+
 export enum SkillName {
   JavaScript = 'JavaScript',
   TypeScript = 'TypeScript',
@@ -18,6 +20,8 @@ export enum SkillName {
   AWS = 'AWS',
   Git = 'Git',
   Postman = 'Postman',
+  Hono = 'Hono',
+  CloudflareWorkers = 'Cloudflare Workers',
 }
 
 export interface Skill {
@@ -29,7 +33,7 @@ export interface Project {
   priority: number;
   title: string;
   shortDescription: string;
-  cover: string;
+  cover: string | StaticImageData;
   livePreview?: string;
   githubLink?: string;
   usedSkills: SkillName[];

@@ -21,16 +21,16 @@ const ContactSection = () => {
         <div className="space-y-2">
           <p className="text-neutral text-lg font-bold">Contact Information</p>
           <a
-            href="mailto:johndoe@gmail.com"
+            href="mailto:vishwasbabar886@gmail.com"
             className="text-neutral hover:text-accent flex items-center gap-1 font-light transition-colors duration-300"
           >
-            <MsgIcon /> johndoe@gmail.com
+            <MsgIcon /> vishwasbabar886@gmail.com
           </a>
           <a
-            href="tel:+92 3123456789"
+            href="tel:+91 7769047031"
             className="text-neutral hover:text-accent flex items-center gap-1 font-light transition-colors duration-300"
           >
-            <PhoneIcon /> +92 3123456789
+            <PhoneIcon /> +91 7769047031
           </a>
         </div>
       </div>

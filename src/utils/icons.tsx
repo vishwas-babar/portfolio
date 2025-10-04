@@ -23,6 +23,7 @@ import RecoilIcon from '../assets/icons/recoil.png';
 import PostgreSQLIcon from '../assets/icons/postgresql.png';
 import RedisIcon from '../assets/icons/redis.png';
 import PostmanIcon from '../assets/icons/postman.png';
+import CloudFlareIcon from '../assets/icons/cloudflare.png';
 
 const PreviewIcon: FC<SVGProps<SVGSVGElement>> = props => {
   return (
@@ -377,5 +378,6 @@ export {
   RecoilIcon,
   RedisIcon,
   ReduxIcon,
+  CloudFlareIcon,
   //   WebSocketsIcon,
 };

@@ -3,6 +3,7 @@ import ContactSection from '@/components/Contact/ContactSection';
 import Hero from '@/components/Hero/Hero';
 import ProjectSection from '@/components/Projects/ProjectSection';
 import Skills from '@/components/Skills/Skills';
+import Footer from '@/components/Footer/Footer';
 import { ExperienceTimeline } from '@/components/Experience';
 
 export default async function Home() {
@@ -12,7 +13,7 @@ export default async function Home() {
       <section className="min-h-screen flex flex-col">
         <Hero />
         {/* <div className="flex-1 flex items-center"> */}
-          <Skills skills={skillList} />
+        <Skills skills={skillList} />
         {/* </div> */}
       </section>
 
@@ -36,6 +37,9 @@ export default async function Home() {
           <ContactSection />
         </div>
       </section>
+
+      {/* Footer */}
+      <Footer />
     </main>
   );
 }

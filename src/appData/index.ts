@@ -119,6 +119,16 @@ export const projects = [
   },
   {
     priority: 6,
+    title: 'Currency Converter',
+    shortDescription:
+      'A real-time currency converter application built with React. Features live exchange rates, multiple currency support, and a clean, intuitive interface for quick currency conversions.',
+    cover: heroPlaceholder,
+    livePreview: 'https://currency-converter.vishwasvb.live/',
+    githubLink: 'https://github.com/vishwas-babar/currency-converter-react',
+    usedSkills: [SkillName.React, SkillName.JavaScript, SkillName.TailwindCSS],
+  },
+  {
+    priority: 7,
     title: 'Animated Landing Page',
     shortDescription:
       'A modern animated landing page with 4–5 hero sections, built with React and Tailwind CSS. Smooth scroll and micro-interactions for delightful UX.',
@@ -128,7 +138,7 @@ export const projects = [
     usedSkills: [SkillName.React, SkillName.TailwindCSS, SkillName.TypeScript],
   },
   {
-    priority: 7,
+    priority: 8,
     title: 'Todo App',
     shortDescription:
       'A task manager built with React, Context API, and Tailwind CSS. Features CRUD operations, task filtering, and persistent storage using Local Storage.',

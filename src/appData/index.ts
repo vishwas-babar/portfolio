@@ -39,7 +39,7 @@ export const projects = [
     shortDescription:
       'A social platform for campus students built with React, Tailwind, Redux, Node, Express, and MongoDB. Integrated Google OAuth 2.0 for login/signup, React Query for optimized data fetching, and Cloudinary for media uploads. Achieved 50% faster data retrieval and 20% lighter server load.',
     cover: Pillaibuzz,
-    livePreview: 'https://pillai-buzz-2-o.vercel.app',
+    livePreview: 'https://pillai-buzz.vishwasvb.live',
     githubLink: 'https://github.com/vishwas-babar/pillai-buzz',
     usedSkills: [
       SkillName.React,
@@ -56,7 +56,7 @@ export const projects = [
     shortDescription:
       'A modern, responsive portfolio website built with Next.js, TypeScript, and Tailwind CSS. Features smooth animations with Framer Motion, theme switching, interactive components, and a clean design showcasing projects, experience, and skills with optimal performance.',
     cover: portfolio,
-    livePreview: 'https://vishwasvb.vercel.app',
+    livePreview: 'https://vishwasvb.live',
     githubLink: 'https://github.com/vishwas-babar/portfolio',
     usedSkills: [
       SkillName.NextJS,
@@ -89,8 +89,8 @@ export const projects = [
     shortDescription:
       'A full-stack anonymous feedback platform built with Next.js, Tailwind, Shadcn, Prisma, PostgreSQL, and NextAuth.js. Features include secure auth, email notifications via Resend, responsive UI with Framer Motion animations, and robust validation with Zod.',
     cover: trueFeedback,
-    livePreview: 'https://true-feeback.vercel.app/',
-    githubLink: 'https://github.com/vishwas-babar/true-feeback',
+    livePreview: 'https://true-feedback.vishwasvb.live',
+    githubLink: 'https://github.com/vishwas-babar/true-feedback',
     usedSkills: [
       SkillName.NextJS,
       SkillName.TypeScript,
@@ -105,7 +105,7 @@ export const projects = [
     shortDescription:
       'A lightweight Medium-style blogging platform built with React, TypeScript, Tailwind, Prisma, and PostgreSQL. Backend powered by Hono + Cloudflare Workers for serverless scalability.',
     cover: Medium,
-    livePreview: 'https://medium-one-puce.vercel.app/',
+    livePreview: 'https://medium.vishwasvb.live',
     githubLink: 'https://github.com/vishwas-babar/medium',
     usedSkills: [
       SkillName.React,
@@ -123,7 +123,7 @@ export const projects = [
     shortDescription:
       'A modern animated landing page with 4–5 hero sections, built with React and Tailwind CSS. Smooth scroll and micro-interactions for delightful UX.',
     cover: animatedLandingPage,
-    livePreview: 'https://animated-landing-page-two.vercel.app/',
+    livePreview: 'https://animated-landing-page.vishwasvb.live',
     githubLink: 'https://github.com/vishwas-babar/animated-landing-page',
     usedSkills: [SkillName.React, SkillName.TailwindCSS, SkillName.TypeScript],
   },
@@ -133,7 +133,7 @@ export const projects = [
     shortDescription:
       'A task manager built with React, Context API, and Tailwind CSS. Features CRUD operations, task filtering, and persistent storage using Local Storage.',
     cover: taskManager,
-    livePreview: 'https://task-manager-eight-rouge.vercel.app/',
+    livePreview: 'https://task-manager.vishwasvb.live',
     githubLink: 'https://github.com/vishwas-babar/task-manager',
     usedSkills: [
       SkillName.NextJS,

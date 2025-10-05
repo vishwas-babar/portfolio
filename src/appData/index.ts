@@ -31,6 +31,7 @@ import trueFeedback from '@/assets/images/truefeedback.png';
 import heroPlaceholder from '@/assets/images/hero-placeholder.png';
 import decentUptime from '@/assets/images/decent-uptime.png';
 import portfolio from '@/assets/images/portfolio.png';
+import currencyCoverter from '@/assets/images/currency-converter.png';
 
 export const projects = [
   {
@@ -122,7 +123,7 @@ export const projects = [
     title: 'Currency Converter',
     shortDescription:
       'A real-time currency converter application built with React. Features live exchange rates, multiple currency support, and a clean, intuitive interface for quick currency conversions.',
-    cover: heroPlaceholder,
+    cover: currencyCoverter,
     livePreview: 'https://currency-converter.vishwasvb.live/',
     githubLink: 'https://github.com/vishwas-babar/currency-converter-react',
     usedSkills: [SkillName.React, SkillName.JavaScript, SkillName.TailwindCSS],

@@ -18,22 +18,22 @@ export default async function Home() {
       </section>
 
       {/* Experience Section */}
-      <section className="min-h-screen flex items-center">
-        <div className="mx-auto w-full max-w-[1200px] px-4">
+      <section className="py-16 sm:py-20 lg:py-24">
+        <div className="mx-auto w-full max-w-[1200px] px-4 sm:px-6 lg:px-8">
           <ExperienceTimeline experiences={experiences} />
         </div>
       </section>
 
       {/* Projects Section */}
-      <section className="min-h-screen mt-20 flex items-center">
-        <div className="mx-auto w-full max-w-[1200px] px-4">
+      <section className="py-16 sm:py-20 lg:py-24">
+        <div className="mx-auto w-full max-w-[1200px] px-4 sm:px-6 lg:px-8">
           <ProjectSection />
         </div>
       </section>
 
       {/* Contact Section */}
-      <section className="min-h-screen flex items-center">
-        <div className="mx-auto w-full max-w-[1200px] px-4">
+      <section className="py-16 sm:py-20 lg:py-24">
+        <div className="mx-auto w-full max-w-[1200px] px-4 sm:px-6 lg:px-8">
           <ContactSection />
         </div>
       </section>

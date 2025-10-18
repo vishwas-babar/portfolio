@@ -102,7 +102,7 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
           stiffness: 150,
         }}
         viewport={{ once: false, margin: '-50px', amount: 0.3 }}
-        className={`absolute top-1/2 transform -translate-y-1/2 z-20 ${
+        className={`hidden md:block absolute top-1/2 transform -translate-y-1/2 z-20 ${
           isLeft
             ? 'md:left-1/2 md:ml-8 right-0 mr-16'
             : 'md:right-1/2 md:mr-8 right-0 mr-16'
@@ -142,7 +142,7 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
             '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
         }}
         transition={{ type: 'spring', stiffness: 200 }}
-        className={`bg-secondary border border-border rounded-xl p-6 shadow-md max-w-lg w-full ml-8 md:ml-0 ${
+        className={`bg-secondary border border-border rounded-xl p-4 sm:p-6 shadow-md max-w-lg w-full md:ml-0 ${
           isLeft ? 'md:mr-auto md:ml-0' : 'md:ml-auto md:mr-0'
         }`}
       >

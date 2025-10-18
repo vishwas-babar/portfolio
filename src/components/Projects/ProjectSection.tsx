@@ -36,14 +36,14 @@ const ProjectSection: React.FC = () => {
   };
 
   return (
-    <section id="projects" className="relative">
+    <section id="projects" className="relative w-full">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: -20 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: false, margin: '-50px', amount: 0.3 }}
-        className="text-center mb-16"
+        className="text-center mb-8 sm:mb-12 lg:mb-16"
       >
         <SectionHeading
           title="My Projects"
@@ -57,7 +57,7 @@ const ProjectSection: React.FC = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, margin: '-20px', amount: 0.2 }}
-        className="my-8 grid grid-cols-1 gap-8 md:my-12 md:grid-cols-2"
+        className="w-full grid grid-cols-1 gap-4 sm:gap-6 md:gap-8 md:grid-cols-2"
       >
         {projects.map(project => (
           <motion.div

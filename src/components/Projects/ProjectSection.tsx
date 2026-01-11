@@ -42,7 +42,7 @@ const ProjectSection: React.FC = () => {
         whileInView={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: -20 }}
         transition={{ duration: 0.6 }}
-        viewport={{ once: false, margin: '-50px', amount: 0.3 }}
+        viewport={{ once: false, margin: '0px', amount: 0.1 }}
         className="text-center mb-8 sm:mb-12 lg:mb-16"
       >
         <SectionHeading
@@ -56,7 +56,7 @@ const ProjectSection: React.FC = () => {
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, margin: '-20px', amount: 0.2 }}
+        viewport={{ once: false, margin: '0px', amount: 0.05 }}
         className="w-full grid grid-cols-1 gap-4 sm:gap-6 md:gap-8 md:grid-cols-2"
       >
         {projects.map(project => (
@@ -67,7 +67,6 @@ const ProjectSection: React.FC = () => {
               y: -8,
               transition: { duration: 0.3, ease: 'easeOut' },
             }}
-            viewport={{ once: true, margin: '-20px', amount: 0.3 }}
             className="group h-full"
           >
             <ProjectCard data={project} />

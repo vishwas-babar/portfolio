@@ -24,6 +24,7 @@ export enum SkillName {
   CloudflareWorkers = 'Cloudflare Workers',
   ReactNative = 'React Native',
   TurboRepo = 'TurboRepo',
+  NATS = 'NATS',
 }
 
 export interface Skill {

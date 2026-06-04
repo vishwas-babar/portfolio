@@ -263,9 +263,30 @@ export const languages = ['En', 'Es', 'Fr', 'De', 'Ru'];
 // Experience Data
 export const experiences: Experience[] = [
   {
+    role: 'Full-Stack Developer Intern',
+    company: 'SyncUp',
+    duration: 'April 2026 – Present',
+    location: 'Remote',
+    type: 'Internship',
+    ldPage: 'https://www.linkedin.com/company/syncupindia',
+    responsibilities: [
+      'Owned and developed an AI-powered job assessment feature for automated candidate screening through structured questionnaires.',
+      'Built a WhatsApp interview screening bot using MSG91 API with stateful conversation handling within the 24-hour messaging window.',
+      'Resolved production AWS infrastructure issues — S3 presigned URL mismatches, MongoDB replica set connectivity on EC2, and Atlas IP whitelisting.',
+    ],
+    techStack: [
+      SkillName.NodeJS,
+      SkillName.ExpressJS,
+      SkillName.MongoDB,
+      SkillName.Redis,
+      SkillName.NATS,
+      SkillName.AWS,
+    ],
+  },
+  {
     role: 'Software Engineer Intern',
     company: 'Betatest Solutions',
-    duration: 'July 2025 – Present',
+    duration: 'July 2025 – April 2026',
     location: 'Remote',
     type: 'Internship',
     ldPage: 'https://www.linkedin.com/company/betatest-solutions-pvt-ltd',
